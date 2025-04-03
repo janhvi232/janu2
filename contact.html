@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .contact-options div {
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            cursor: pointer;
+        }
+
+        .contact-options div:hover {
+            background-color: #f0f0f0;
+        }
+
+        .contact-options img {
+            width: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contact-options p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Place Your Order-Crafty Resin Creations</h2>
+        <form action="#" method="post" id="orderForm">
+            <div class="form-group">
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Number:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">--Select a Product--</option>
+                    <option value="Key Chain">Key Chain</option>
+                    <option value="Photo Frame">Photo Frame</option>
+                    <option value="Photo key chains ">Mugs</option>
+                    <option value="alphabet key chains">T-Shirt</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="customization">Customization (Optional):</label>
+                <textarea id="customization" name="customization" rows="4" placeholder="Enter custom text or select color (if any)"></textarea>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div class="footer">
+            <p>Have a question? Feel free to <a href="mailto:support@example.com">Contact Us</a></p>
+        </div>
+
+        <div class="contact-options">
+            <div onclick="window.location.href='https://wa.me/7470306065'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/WhatsApp_logo_2022.svg/1024px-WhatsApp_logo_2022.svg.png" alt="7470306065">
+                <p>Contact Us on WhatsApp</p>
+            </div>
+            <div onclick="window.location.href='https://instagram.com/@janhvinamdeo'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="@janhvinamdeo">
+                <p>DM Us on Instagram</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('customerName').value;
+            const email = document.getElementById('email').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const product = document.getElementById('product').value;
+            const customization = document.getElementById('customization').value;
+
+            if (name && email && whatsapp && product) {
+                alert(`Order Placed!\nName: ${name}\nEmail: ${email}\nWhatsApp: ${whatsapp}\nProduct: ${product}\nCustomization: ${customization}`);
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+    </script>
+
+</body>
+</html>

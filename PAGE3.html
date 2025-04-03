@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  PHOTO KEY CHAIN </title>
+    <style>
+        body {
+            text-align: center; 
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery img {
+            width: 390px;  
+            height: 390px; 
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin: 5px;
+        }
+        .gallery p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            color: pink; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .order-section {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            color: black;
+        }
+
+        .add-to-cart {
+            background-color: orange; 
+        }
+
+        .add-to-cart:hover {
+            background-color: darkorange;
+        }
+
+        .buy-now {
+            background-color: pink;  
+        }
+
+        .buy-now:hover {
+            background-color: red;
+        }
+
+        .contact-section {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: blue;
+            margin: 10px;
+        }
+
+        .contact-section a:hover {
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="title">PHOTO KEY CHAINS-Crafty Resin Creations</p>
+
+    <!-- Images Section -->
+    <div class="gallery">
+        <div><p>1</p><img src="ppp1.jpg"></div>
+        <div><p>2</p><img src="ppp2.jpg"></div>
+        <div><p>3</p><img src="ppp3.jpg"></div>
+        <div><p>4</p><img src="ppp4.jpg"></div>
+        <div><p>5</p><img src="ppp5.jpg"></div>
+        <div><p>6</p><img src="ppp6.jpg"></div>
+        <div><p>7</p><img src="ppp7.jpg"></div>
+        <div><p>8</p><img src="ppp8.jpg"></div>
+        <div><p>9</p><img src="ppp9.jpg"></div>
+     
+    </div>
+
+    <div class="order-section">
+        <button class="btn add-to-cart">🛒 Add to Cart</button>
+        <button class="btn buy-now">💳 Buy Now</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <p>📞 Contact Us:</p>
+        <p>📧 Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+</body>
+</html>

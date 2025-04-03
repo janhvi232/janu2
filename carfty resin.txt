@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Art Business</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .product {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Resin Art Creations</header>
+    <div class="container">
+        <h2>Handmade Resin Art & Jewelry</h2>
+        <div class="product">
+            <img src="resin-art.jpg" alt="Resin Art">
+            <h3>Elegant Resin Coaster</h3>
+            <p>Beautiful handmade resin coaster with custom colors.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="resin-jewelry.jpg" alt="Resin Jewelry">
+            <h3>Resin Pendant Necklace</h3>
+            <p>Stylish resin pendant necklace, perfect for any occasion.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>
